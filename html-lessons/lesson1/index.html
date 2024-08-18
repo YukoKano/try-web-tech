@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>サイトのタイトル</h1>
+    </header>
+    <!-- navはheaderの中にいるべきかどうか -->
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>blog</li>
+        <li>contact</li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <!-- article野中にheaderが入れられるか -->
+        <header>
+          <h2>このサイトについて</h2>
+          公開日：<time datetime="2024-08-19">2024/8/19</time>
+        </header>
+        <aside>
+          <!-- sectionかasideか？ -->
+          <!-- articleで使うと著者のaddressになる -->
+          <p>この記事の著者</p>
+          <address>
+            <a href="mailto:author@author.com">author@author.com</a>
+            <a href="tel:+08100000000000">000-0000-0000</a>
+          </address>
+        </aside>
+      </article>
+      <aside>
+        <!-- asideは文中でも使える -->
+        <p>関連記事</p>
+        <ul>
+          <li>hogehoge</li>
+          <li>hogehoge</li>
+          <li>hogehoge</li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>© 2018 Gandalf</p>
+      <address>
+        <p>このページの作者</p>
+        <a href="mailto:example@example.com">example@example.com</a>
+        <a href="tel:+08101234567890">012-3456-7890</a>
+      </address>
+    </footer>
+  </body>
+</html>
